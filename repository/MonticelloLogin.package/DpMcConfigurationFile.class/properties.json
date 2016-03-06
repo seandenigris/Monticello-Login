@@ -1,0 +1,14 @@
+{
+	"category" : "MonticelloLogin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SeanDeNigris 2/18/2015 20:49",
+	"instvars" : [
+		"folder" ],
+	"name" : "DpMcConfigurationFile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

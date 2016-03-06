@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfMonticelloLogin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfMonticelloLogin",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

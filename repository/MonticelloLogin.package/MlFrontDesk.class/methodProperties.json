@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"menuCommandOn:" : "SeanDeNigris 3/6/2016 10:26" },
+	"instance" : {
+		"logInTo:withCredentialsAt:" : "SeanDeNigris 3/6/2016 10:28",
+		"logInToSmalltalkHub" : "SeanDeNigris 3/6/2016 10:24",
+		"logInToSqueakSource" : "SeanDeNigris 3/6/2016 10:24",
+		"logInToSqueakSource3" : "SeanDeNigris 3/6/2016 10:24",
+		"logOutOfAllRepositories" : "SeanDeNigris 3/6/2016 10:24" } }

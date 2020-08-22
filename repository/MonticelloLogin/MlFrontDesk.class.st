@@ -1,23 +1,29 @@
 Class {
 	#name : #MlFrontDesk,
 	#superclass : #Object,
-	#category : 'MonticelloLogin'
+	#category : #MonticelloLogin
 }
 
 { #category : #'world menu' }
 MlFrontDesk class >> menuCommandOn: aBuilder [ 
 	<worldMenu> 
 	
-	(aBuilder item: #RepoAuthentication)
+	(aBuilder item: #'MCZ Repos')
 		with: [
-			(aBuilder item: #'ss')
-				action: [ self new logInToSqueakSource ].
 			(aBuilder item: #'ss3')
-				action: [ self new logInToSqueakSource3 ].
-			(aBuilder item: #'sthub')
-				action: [ self new logInToSmalltalkHub ].
-			(aBuilder item: #'Logout of all')
-				action: [ self new logOutOfAllRepositories ] ]
+				action: [ 
+					"Smalltalk tools" WebBrowser openOn: 'http://ss3.gemtalksystems.com/'
+					"Per http://forum.world.st/Two-ss3-s-tp5110168p5110170.html, the other URL (http://ss3.gemstone.com/) is obsolete" ].
+			(aBuilder item: #'Authentication')
+				with: [
+					(aBuilder item: #'ss')
+						action: [ self new logInToSqueakSource ].
+					(aBuilder item: #'ss3')
+						action: [ self new logInToSqueakSource3 ].
+					(aBuilder item: #'sthub')
+						action: [ self new logInToSmalltalkHub ].
+					(aBuilder item: #'Logout of all')
+						action: [ self new logOutOfAllRepositories ] ] ]
 ]
 
 { #category : #'logging in' }
